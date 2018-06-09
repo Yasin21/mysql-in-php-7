@@ -67,7 +67,7 @@ if(!function_exists("mysql_connect")){
 
 
     function __get_current_connection($connection){
-        if($connection = null){
+        if($connection == null){
             return $GLOBALS['__connection'];
         }
         return $connection;
